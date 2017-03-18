@@ -13,6 +13,11 @@ sourceCompatibility = '1.8'
 if (!hasProperty('mainClass')) {
     ext.mainClass = ''
 }
+jar {
+    manifest {
+        attributes 'Main-Class': 'HelloWorld.main'
+    }
+}
 
 repositories {
     mavenCentral()
