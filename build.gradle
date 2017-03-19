@@ -7,6 +7,10 @@
  */
 
 // Apply the java plugin to add support for Java
+plugins {
+    id 'com.github.kt3k.coveralls' version '2.8.1'
+}
+
 apply plugin: 'java'
 
 // Apply the application plugin to add support for building an application
@@ -33,5 +37,11 @@ mainClassName = 'ohtu.ohtuvarasto.Main'
 jar {
     manifest {
         attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
+    }
+}
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
     }
 }
