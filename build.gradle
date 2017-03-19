@@ -39,6 +39,7 @@ jar {
         attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
     }
 }
+apply plugin: "jacoco" 
 jacocoTestReport {
     reports {
         xml.enabled = true // coveralls plugin depends on xml format report
