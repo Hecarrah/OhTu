@@ -15,6 +15,7 @@ apply plugin: 'java'
 
 // Apply the application plugin to add support for building an application
 apply plugin: 'application'
+apply plugin: 'checkstyle'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -32,11 +33,11 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'ohtu.ohtuvarasto.Main'
+mainClassName = 'Main'
 
 jar {
     manifest {
-        attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
+        attributes 'Main-Class': '.Main'
     }
 }
 apply plugin: "jacoco" 
@@ -45,4 +46,7 @@ jacocoTestReport {
         xml.enabled = true // coveralls plugin depends on xml format report
         html.enabled = true
     }
+}
+run {
+    standardInput = System.in
 }
