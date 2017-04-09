@@ -9,11 +9,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import cucumber.api.java.Before;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 
 public class Stepdefs {
-    WebDriver driver = new ChromeDriver();
+    WebDriver driver;
     String baseUrl = "http://localhost:4567";
     
+    @Before
+    public void setUp() {
+    ChromeDriverManager.getInstance().setup();
+    driver = new ChromeDriver();
+    System.setProperty("webdriver.chrome.driver", "\"D:\\User\\Tiedostot\\GitHub\\OhTu\\Viikko4\\WebLogin\\chromedriver.exe\"");
+}
     @Given("^login is selected$")
     public void login_selected() throws Throwable {
         driver.get(baseUrl);
@@ -43,6 +51,10 @@ public class Stepdefs {
 
     @When("^correct username \"([^\"]*)\" and incorrect password \"([^\"]*)\" are given$")
     public void username_and_incorrect_password_are_given(String username, String password) throws Throwable {
+        logInWith(username, password);
+    }
+    @When("^nonexistent username \"([^\"]*)\" and password \"([^\"]*)\" are given$")
+    public void nonexistent_username_and_password_are_given(String username, String password) throws Throwable {
         logInWith(username, password);
     }
     

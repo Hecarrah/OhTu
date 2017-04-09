@@ -25,7 +25,7 @@ public class Tester {
         sleep(2);
 
         element = driver.findElement(By.name("username"));
-        element.sendKeys("pekka222");
+        element.sendKeys("pekka22");
         element = driver.findElement(By.name("password"));
         element.sendKeys("akkep2");
         element = driver.findElement(By.name("passwordConfirmation"));
