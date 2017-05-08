@@ -1,0 +1,14 @@
+Referaatti Martin Fowlerin artikkelista "Is Design Dead?"
+https://martinfowler.com/articles/designDead.html luettu 7.5.2017
+
+Artikkelissa Martin Fowler puhuu "Extreme Programming" tyylisen koodaus paradigman kehityksestä, ja miten se on vaikuttanut agilen kehitykseen, ja kuinka agile itsessään on tullut olemaan. Artikkelin alussa Fowler puhuu siitä kuinka extreme programming toimii, ja mitä hyötyä siitä on ohjelmistotuotannon kannalta.
+Fowler painottaa sitä, että testaus on xp:n kannalta elintärkeätä, ja olisi mahdotonta ilman testien, ja jatkuvan integraation luomaa turvallisuutta.
+Fowler avaa sitä mitä extreme programming:issä on loppujen lopulta kyse kertomalla, että kaikki pyritään tehdä esimerkiksi neljän seuraavan kriteerin avulla. Ajaa, ja läpäisee kaikki testit, ei duplikaatteja, aikomukset ovat selviä koodissa, ja mahdollisimman vähän luokkia tai metodeja.
+Kriteerien ideana on se, että koodi on mahdollissamn yksinkertaista ja luettavaa ihmiselle.
+
+Artikkelin loppupuolella Fowler puhuu siitä kuinka extreme programming:in kanssa on melko helppo tehdä muutoksia projektiin vielä paljon myöhemminkin, eikä se oli rajusti rajoitettu alkuperäiseen suunnitelmaan. extreme programmingissa usein suositaankin mahdollistamaan käänteisyyttä, joka myös mahdollistaa sen että, mahdolliset virheet pystyvät nousemaan pintaan nopeammin.
+
+Artikkelin lopussa Fowler vastaa artikkelin nimessä olevaan kysymykseen "Is design dead?" Ei, mutta sen luonto on muuttunut merkittävästi, ja listaa että extreme programming:in suunnittely hakee seuraavia kykyjä: Halu pitää koodi siistinä, ja simppelinä, refaktorointi taitoa jatkuvaa parannusta varten, vahvaa tietoa malleista, suunnittelua tulevaisuutta ajatellen, ja että osaa kommunikoida suunnitelmasta ihmisille jotka eivät sitä ymmärrä.
+
+
+
